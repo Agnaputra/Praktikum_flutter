@@ -37,3 +37,46 @@ Now, Flutter needs to know where you want to save all the files for this new pro
 ![alt text](image/Practical1_pict2.png)
 
 Explanation: 📁 It's good practice to choose a neat and not-too-deep file path (e.g., C:\Users\YourName\Documents\…) to avoid potential issues with long path names, which can sometimes cause errors on certain operating systems.
+
+### Step 3: Name Your Project
+Every project needs a unique name as an identifier.
+
+After selecting the folder, VS Code will prompt you to enter a project name.
+
+Type hello_world and press Enter.
+
+Important Rules for Project Names:
+
+Use only lowercase letters.
+
+Use underscores (_) instead of spaces.
+
+The name cannot start with a number or a special character.
+
+![alt text](image/Practical1_pict3.png)
+
+Explanation: 📝 These naming rules are mandatory because the project name is also used as the package name in the Dart/Flutter ecosystem. After you press Enter, Flutter will start working in the background, creating the hello_world folder and populating it with all the necessary template files. This process might take a few seconds to a minute.
+
+### Step 4: Project Successfully Created
+If all steps were done correctly, VS Code will open a new window containing your complete Flutter project.
+
+You will see:
+
+The project's folder structure in the panel on the left (containing folders like lib, android, ios, etc.).
+
+The lib/main.dart file will be automatically opened in the main editor.
+
+A success message will appear in the bottom-right corner.
+
+![alt text](image/Practical1_pict4.png)
+
+Explanation: ✅ Congratulations! You have successfully created your first Flutter project. The main.dart file inside the lib folder is the starting point of your application. This is where the code for the default demo app (a simple counter app) is located.
+
+## Practical 2: Connecting an Android Device or Emulator
+
+Continuing from lab 1, you'll be asked to run the application on a physical device (Android or iOS). Please follow the steps in the codelab linked below.
+
+https://developer.android.com/codelabs/basic-android-kotlin-compose-connect-device?hl=en#0
+
+Back
+Next
