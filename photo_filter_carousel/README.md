@@ -370,3 +370,10 @@ void main() {
   );
 }
 ```
+
+## 5. Practical Assignments
+Complete Practicals 1 and 2, then document and upload screenshots of each work result along with explanations in a file README.md! If there are any errors or code that doesn't work, please correct them according to the application's purpose!
+Combine the results of lab 1 with the results of lab 2 so that after taking the photo, you can create a carousel filter!
+Explain the purpose void asyncof practical 1?
+Explain the function of annotation @immutableand @override?
+Submit your GitHub repository commit link to the agreed lecturer!
