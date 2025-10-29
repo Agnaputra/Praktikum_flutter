@@ -826,3 +826,4 @@ The @immutable annotation is used to declare that the annotated class and all of
 The @override annotation signals that a method (function) within a subclass is intended to replace or modify an existing method with the exact same name and signature inherited from its parent class or interface. Its primary function is a safety and clarity feature. If you mistakenly change the name or parameters of the method in the subclass (or if the method name in the superclass changes), the Dart compiler will immediately throw a compile-time error. This prevents subtle bugs that might only appear during runtime and significantly enhances code readability by clearly indicating which methods are being inherited and customized.
 
 5. Submit your GitHub repository commit link to the agreed lecturer!
+![alt text](photo_filter_carousel/images/image.png)
