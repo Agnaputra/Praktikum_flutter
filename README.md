@@ -776,10 +776,50 @@ void main() {
 
 2. Combine the results of lab 1 with the results of lab 2 so that after taking the photo, you can create a carousel filter!
 
-- 
+the code:
+
+- main.dart:
+[text](flutter_assignment_1/lib/main.dart)
+
+- carousel_flowdelegate:
+[text](flutter_assignment_1/lib/widget/carousel_flowdelegate.dart)
+
+- filter_carousel.dart
+[text](flutter_assignment_1/lib/widget/filter_carousel.dart)
+
+- filter_item.dart
+[text](flutter_assignment_1/lib/widget/filter_item.dart)
+
+- filter_selector.dart
+[text](flutter_assignment_1/lib/widget/filter_selector.dart)
+
+- takepicture_screen.dart
+[text](flutter_assignment_1/lib/widget/takepicture_screen.dart)
+
+- Result:
+1:
+![alt text](flutter_assignment_1/images/1.jpg)
+
+2:
+![alt text](flutter_assignment_1/images/2.jpg)
 
 3. Explain the purpose void asyncof practical 1?
 
+- The primary purpose of using the async keyword on a function (e.g., void async _takePicture()) is to enable asynchronous operation.
+
+1. I/O Operations: Taking a picture (await _controller.takePicture()) is an I/O operation that involves device hardware (the camera) and disk storage. Such operations inherently take time.
+
+2. Non-Blocking: By marking the function as async, the await keyword can be used. This tells the program to pause execution within this function only, waiting for the camera operation to complete, but crucially, it releases the main UI thread.
+
+3. Result: This ensures the application remains responsive; the user interface does not freeze while waiting for the picture to be processed, which is essential for a good user experience.
+
 4. Explain the function of annotation @immutableand @override?
+ - The @immutable Annotation
+
+The @immutable annotation is used to declare that the annotated class and all of its public fields cannot be changed after the object has been created (constructed). In Flutter, this is particularly important for Widget classes (especially StatelessWidget) because it communicates to the framework and to other developers that all properties within the class are final. By ensuring a widget is immutable, you improve the code's predictability and stability, as it prevents unexpected state changes. This immutability also helps the Flutter framework optimize its internal processes, such as determining when a widget needs to be rebuilt.
+
+- The @override Annotation
+
+The @override annotation signals that a method (function) within a subclass is intended to replace or modify an existing method with the exact same name and signature inherited from its parent class or interface. Its primary function is a safety and clarity feature. If you mistakenly change the name or parameters of the method in the subclass (or if the method name in the superclass changes), the Dart compiler will immediately throw a compile-time error. This prevents subtle bugs that might only appear during runtime and significantly enhances code readability by clearly indicating which methods are being inherited and customized.
 
 5. Submit your GitHub repository commit link to the agreed lecturer!
