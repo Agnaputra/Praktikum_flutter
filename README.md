@@ -4,7 +4,7 @@ A new Flutter project.
 
 ## Step 1: Create a New Project
 Create a new flutter project with the name kamera_flutter , then adjust the style of the lab report you created.
-![alt text](images/prac1/1.png)
+![kamera_flutter/images/prac1/1.png](kamera_flutter/images/prac1/1.png)
 
 ## Step 2: Add required dependencies
 You need three dependencies on your flutter project to complete this lab.
@@ -17,7 +17,7 @@ path→ create paths to support multiple platforms.
 
 To add a plugin dependency, run a command flutter pub addlike the following in the terminal:
 
-![alt text](images/prac1/2.png)
+![kamera_flutter/images/prac1/2.png](kamera_flutter/images/prac1/2.png)
 
 ## Step 3: Remove the Camera Sensor from the device
 Next, we need to check the number of cameras available on the device using a plugin cameralike the one in the following code. Place this code inside void main().
@@ -393,7 +393,7 @@ class TakePictureScreenState extends State<TakePictureScreen> {
 }
 ```
 RESULT:
-![alt text](images/prac1/3.jpg)
+![kamera_flutter/images/prac1/3.jpg](kamera_flutter/images/prac1/3.jpg)
 
 # photo_filter_carousel - Lab 2
 
@@ -401,7 +401,7 @@ A new Flutter project.
 
 ## Step 1: Create a new project
 Create a new flutter project in meeting 09 with the name photo_filter_carousel
-![alt text](images/1.png)
+![photo_filter_carousel/images/1.png](photo_filter_carousel/images/1.png)
 
 ## Step 2: Create a Selector ring and dark gradient widget
 Create a widgetnew folder and file containing the following code.
@@ -573,7 +573,7 @@ class _FilterSelectorState extends State<FilterSelector> {
 
 ```
 
-Step 3: Create a photo filter carousel widget
+## Step 3: Create a photo filter carousel widget
 Create a new file in the widget folder with code like the following.
 
 lib/widget/filter_carousel.dart
@@ -767,6 +767,9 @@ void main() {
   );
 }
 ```
+
+Result:
+![alt text](photo_filter_carousel/images/2.jpg)
 
 # 5. Practical Assignments
 1. Complete Practicals 1 and 2, then document and upload screenshots of each work result along with explanations in a file README.md! If there are any errors or code that doesn't work, please correct them according to the application's purpose!
