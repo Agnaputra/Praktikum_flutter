@@ -20,11 +20,11 @@ class FilterItem extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(8),
           child: ClipOval(
-            child: Image.network(
-              'https://docs.flutter.dev/cookbook/img-files'
-              '/effects/instagram-buttons/millennial-texture.jpg',
+            child: Image.asset(
+              'assets/images/img1.jpg', // MENGGUNAKAN FOTO YANG SAMA SEBAGAI TEKSTUR
               color: color.withOpacity(0.5),
               colorBlendMode: BlendMode.hardLight,
+              fit: BoxFit.cover, // Pastikan fit disetel agar terlihat bagus di ClipOval
             ),
           ),
         ),

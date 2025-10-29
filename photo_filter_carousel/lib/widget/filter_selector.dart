@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
+import 'package:flutter/rendering.dart'; 
 
 import 'carousel_flowdelegate.dart';
 import 'filter_item.dart';
@@ -47,7 +47,7 @@ class _FilterSelectorState extends State<FilterSelector> {
     final page = (_controller.page ?? 0).round();
     if (page != _page) {
       _page = page;
-      widget.onFilterChanged(widget.filters[page]);
+      widget.onFilterChanged(widget.filters[page % filterCount]); 
     }
   }
 
@@ -75,6 +75,7 @@ class _FilterSelectorState extends State<FilterSelector> {
         return LayoutBuilder(
           builder: (context, constraints) {
             final itemSize = constraints.maxWidth * _viewportFractionPerItem;
+            // Penting: Mengaplikasikan dimensi viewport dan konten ke offset
             viewportOffset
               ..applyViewportDimension(constraints.maxWidth)
               ..applyContentDimensions(0.0, itemSize * (filterCount - 1));
@@ -123,6 +124,7 @@ class _FilterSelectorState extends State<FilterSelector> {
       height: itemSize,
       margin: widget.padding,
       child: Flow(
+        // Meneruskan ViewportOffset ke delegate
         delegate: CarouselFlowDelegate(
           viewportOffset: viewportOffset,
           filtersPerScreen: _filtersPerScreen,

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'filter_item.dart';
 import 'filter_selector.dart';
 
 @immutable
@@ -31,9 +30,11 @@ class _PhotoFilterCarouselState extends State<PhotoFilterCarousel> {
       color: Colors.black,
       child: Stack(
         children: [
+          // Gambar utama dengan efek filter warna
           Positioned.fill(
             child: _buildPhotoWithFilter(),
           ),
+          // Carousel filter di bagian bawah layar
           Positioned(
             left: 0.0,
             right: 0.0,
@@ -49,10 +50,9 @@ class _PhotoFilterCarouselState extends State<PhotoFilterCarousel> {
     return ValueListenableBuilder(
       valueListenable: _filterColor,
       builder: (context, color, child) {
-        // Anda bisa ganti dengan foto Anda sendiri
-        return Image.network(
-          'https://docs.flutter.dev/cookbook/img-files'
-          '/effects/instagram-buttons/millennial-dude.jpg',
+        // MENGGUNAKAN GAMBAR LOKAL: img1.jpg
+        return Image.asset(
+          'assets/images/img1.jpg', 
           color: color.withOpacity(0.5),
           colorBlendMode: BlendMode.color,
           fit: BoxFit.cover,
